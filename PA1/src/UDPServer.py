@@ -1,7 +1,7 @@
 #! env python
 
 """UDP server for CST311 Programming Assignment 1"""
-__author__ = "Team6 Bit by Bit Development"
+__author__ = "Team6: Bit by Bit Development"
 __credits__ = [
   "Nick Anderson",
   "Juan Duarte",
@@ -31,13 +31,15 @@ def handle_client_request(server_socket, message, client_addr):
   :param client_addr: client address to respond to
   :return:
   """
+
+  message = message.decode()
   
-  log.debug("Recieved message: \"" + message + "\" from client @ \"" + client_addr + "\"")
+  log.debug("Recieved message: \"" + message + "\" from client @ \"" + str(client_addr) + "\"")
   
   # Does two things:
   ## 1. decode message -- messages are transmitted as a UTF-8 bytestream so we have to decode them
   ## 2. convert string to upcase -- we use the upper() str function
-  response_msg = message.decode().upper()
+  response_msg = message.upper()
   
   # Encode the message string back to a UTF-8 bytestream
   response = response_msg.encode()
