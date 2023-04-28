@@ -22,7 +22,7 @@ log.setLevel(logging.DEBUG)
 import UDPServer
 
 # localhost is shorthand for our current host.  If talking to a different host this should be changed
-server_host = '10.0.0.1'
+server_host = '10.0.0.1' # change IP address to server hosts IP address
 # We grab the server port from our server so we are guaranteed to be using the same one
 server_port = UDPServer.SERVER_PORT
 
