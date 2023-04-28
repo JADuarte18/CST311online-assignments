@@ -1,11 +1,12 @@
 #! env python
 
 """UDP server for CST311 Programming Assignment 1"""
-__author__ = "[team name here]"
+__author__ = "Team6 Bit by Bit Development"
 __credits__ = [
-  "Your",
-  "Names",
-  "Here"
+  "Nick Anderson",
+  "Juan Duarte",
+  "Jonathan PEggs",
+  "Oscar Ochoa"
 ]
 
 # Import the socket module as a named module to help keep our namespace clean
